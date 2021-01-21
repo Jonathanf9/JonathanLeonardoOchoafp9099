@@ -23,7 +23,7 @@ public class GestionCliente extends JFrame {
 
     private JPanel panelTitulo = new JPanel();
     private JPanel panelcuerpo = new JPanel();
-   
+    private JPanel panelbotones = new JPanel();
 
     public GestionCliente() {
         //Mostrar Pantalla
@@ -42,15 +42,14 @@ public class GestionCliente extends JFrame {
         
         button.setText("REGISTRAR CLIENTES");  
 /*/
-        JTextField txtDato= new JTextField("Digitar Datos Clientes");
-       
+        JTextField txtDato = new JTextField("Digitar Datos Clientes");
 
         panelTitulo.add(label);
         // panel.add(button);
-         panel.add(txtDato);
+        panel.add(txtDato);
         //Agrege el panel al Jframe
         panel.add(panelTitulo);
-        panelcuerpo.setLayout(new GridLayout(8, 2));
+        panelcuerpo.setLayout(new GridLayout(6, 2));
         panelcuerpo.add(new JLabel("Nombres:"));
         panelcuerpo.add(new JTextField("Jonathan Leonardo"));
         panelcuerpo.add(new JLabel("Apellidos:"));
@@ -63,21 +62,20 @@ public class GestionCliente extends JFrame {
         panelcuerpo.add(new JTextField("1150205999"));
         panelcuerpo.add(new JLabel("Telefono:"));
         panelcuerpo.add(new JTextField("297343"));
-       
+        panel.add(panelcuerpo);
         //JButton button = new JButton();
         //panel.add(button);
-        
-        panelcuerpo.add(new JButton("Agregar"));
-        panelcuerpo.add(new JButton("Editar"));
-        panelcuerpo.add(new JButton("Eliminar"));
-        panelcuerpo.add(new JButton("Presentar ultimo registro"));
+        panelbotones = new JPanel(new FlowLayout(FlowLayout.CENTER));
+        panelbotones.add(new JButton("Agregar"));
+        panelbotones.add(new JButton("Editar"));
+        panelbotones.add(new JButton("Eliminar"));
+        panelbotones.add(new JButton("Presentar ultimo registro"));
+        panel.add(panelbotones);
 
-
-        panel.add(panelcuerpo);
         this.add(panel);
         //centra la pantalla
         this.setLocationRelativeTo(null);
-        this.setSize(new Dimension(360,450));
+        this.setSize(new Dimension(360, 450));
         //Fin al programa.
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 

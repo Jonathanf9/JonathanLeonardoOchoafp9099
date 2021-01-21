@@ -14,8 +14,14 @@ import javax.swing.JOptionPane;
 public class Main {
 
     public static void main(String[] args) {
+        
+        
         Clientesbd clientesbd = new Clientesbd();
-        GestionCliente gestionCliente = new GestionCliente();
+       // GestionCliente gestionCliente = new GestionCliente(); 
+        
+        GestionClientesV1 ingresar = new GestionClientesV1(); 
+       ingresar.setVisible(true);
+       
     }
 
 }

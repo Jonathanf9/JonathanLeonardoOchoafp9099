@@ -23,7 +23,7 @@ public class Clientesbd {
         Statement stm = null;
         //Sentencia de JDBC para obtener valores de la base de datos.
         ResultSet rs = null;
-        String sql = "SELECT * FROM ejercicio.persona;";
+        String sql = "SELECT * FROM bdejercicio1.clientes;";
         List<clientes> listaclientes = new ArrayList<clientes>();
         try {
             co = new Conexion().conectarBaseDatos();

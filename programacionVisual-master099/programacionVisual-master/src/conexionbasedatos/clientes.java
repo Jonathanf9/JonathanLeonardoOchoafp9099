@@ -16,6 +16,15 @@ public class clientes {
     private String Apellido;
     private String Referencia;
     private String Domicilio;
+
+    public clientes(String Nombre, String Apellido, String Referencia, String Correo, String Cedula, String Telefono) {
+        this.Nombre = Nombre;
+        this.Apellido = Apellido;
+        this.Referencia = Referencia;
+        this.Correo = Correo;
+        this.Cedula = Cedula;
+        this.Telefono = Telefono;
+    }
     private String Pais;
     private String Correo;
     private String Cedula;
@@ -43,8 +52,8 @@ public class clientes {
       public clientes() {
     }
 
-    public clientes (int idclientes) {
-        this.idClientes= idClientes;
+    public clientes(int idclientes) {
+        this.idClientes = idClientes;
     }
 
     
@@ -151,3 +160,4 @@ public class clientes {
 }
 
 }
+
