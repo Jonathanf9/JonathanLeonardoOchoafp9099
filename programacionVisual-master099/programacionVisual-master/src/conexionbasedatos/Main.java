@@ -19,9 +19,7 @@ public class Main {
         Clientesbd clientesbd = new Clientesbd();
        // GestionCliente gestionCliente = new GestionCliente(); 
         
-        GestionClientesV1 ingresar = new GestionClientesV1(); 
-       ingresar.setVisible(true);
-       
+        GestionCliente gestioncliente = new GestionCliente();      
     }
 
 }

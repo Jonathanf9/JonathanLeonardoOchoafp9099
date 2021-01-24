@@ -18,9 +18,8 @@ public class nuevocliente {
         boolean reguistrar = false;
         Connection con = null;
         Statement stm = null;
-
-        String sql = "INSERT INTO clientes (`Nombre`, `Apellido`, `Referencia`, `Domicilio`, `Pais`, `Correo` ,`Cedula`, `Telefono`, `EstadoCivil`,`Edad`,`Sexo` ) VALUES ('" + Clientes.getNombre()+ "', '" + Clientes.getApellido()+ "', '" + Clientes.getReferencia() + "', '" + Clientes.getDomicilio() + "', '" + Clientes.getPais() + "', '" + Clientes.getCorreo() + "', '" + Clientes.getCedula() + "', '" + Clientes.getTelefono() +"', '" + Clientes.getEstadoCivil() + "', '" + Clientes.getEdad() + "', '" + Clientes.getSexo() + "')";
-
+String sql = "INSERT INTO clientes (`Nombre`, `Apellido`, `Referencia`, `Domicilio`, `Pais`, `Correo` ,`Cedula`, `Telefono`, `EstadoCivil`,`Edad`,`Sexo` ) VALUES ('" + Clientes.getNombre()+ "', '" + Clientes.getApellido()+ "', '" + Clientes.getReferencia() + "', '" + Clientes.getDomicilio() + "', '" + Clientes.getPais() + "', '" + Clientes.getCorreo() + "', '" + Clientes.getCedula() + "', '" + Clientes.getTelefono() +"', '" + Clientes.getEstadoCivil() + "', '" + Clientes.getEdad() + "', '" + Clientes.getSexo() + "')";
+      
         try {
             Conexion conexion = new Conexion();
             con = conexion.conectarBaseDatos();

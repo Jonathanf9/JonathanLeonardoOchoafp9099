@@ -46,17 +46,14 @@ public class clientes {
         this.EstadoCivil = EstadoCivil;
         this.Edad = Edad;
         this.Sexo = Sexo;
-}
-    
-    
-      public clientes() {
+    }
+
+    public clientes() {
     }
 
     public clientes(int idclientes) {
         this.idClientes = idClientes;
     }
-
-    
 
     public String getNombre() {
         return Nombre;
@@ -153,11 +150,11 @@ public class clientes {
     public void setIdClientes(int idClientes) {
         this.idClientes = idClientes;
     }
-   @Override
+
+    @Override
     public String toString() {
-        return "clientes{" + "idClientes=" + idClientes + ", Nombre=" + Nombre + ", Apellido=" + Apellido + ", Referencia=" + Referencia + ", Domicilio=" + Domicilio + ", Pais=" + Pais + ", Correo=" + Correo +", Cedula=" + Cedula + ", Telefono=" + Telefono + ", EstadoCivil=" + EstadoCivil +", Edad=" + Edad + ", Sexo=" + Sexo +'}';  
+        return "clientes{" + "idClientes=" + idClientes + ", Nombre=" + Nombre + ", Apellido=" + Apellido + ", Referencia=" + Referencia + ", Domicilio=" + Domicilio + ", Pais=" + Pais + ", Correo=" + Correo + ", Cedula=" + Cedula + ", Telefono=" + Telefono + ", EstadoCivil=" + EstadoCivil + ", Edad=" + Edad + ", Sexo=" + Sexo + '}';
+
+    }
 
 }
-
-}
-
