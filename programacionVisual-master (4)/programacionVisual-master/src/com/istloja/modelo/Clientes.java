@@ -12,21 +12,21 @@ package com.istloja.modelo;
 public class Clientes {
     
     private int idCliente;
-    private String cedula;
-    private String nombre;
-    private String apellidos;
-    private String direccion;
-    private String correo;
-    private String telefono;
+    private String Cedula;
+    private String Nombre;
+    private String Apellido;
+    private String Direccion;
+    private String Correo;
+    private String Telefono;
 
-    public Clientes(int idCliente, String cedula, String nombre, String apellidos, String direccion, String correo, String telefono) {
+    public Clientes(int idCliente, String Cedula, String Nombre, String Apellido, String Direccion, String Correo, String Telefono) {
         this.idCliente = idCliente;
-        this.cedula = cedula;
-        this.nombre = nombre;
-        this.apellidos = apellidos;
-        this.direccion = direccion;
-        this.correo = correo;
-        this.telefono = telefono;
+        this.Cedula = Cedula;
+        this.Nombre = Nombre;
+        this.Apellido = Apellido;
+        this.Direccion = Direccion;
+        this.Correo = Correo;
+        this.Telefono = Telefono;
     }
     
     
@@ -50,56 +50,56 @@ public class Clientes {
     }
 
     public String getCedula() {
-        return cedula;
+        return Cedula;
     }
 
     public void setCedula(String cedula) {
-        this.cedula = cedula;
+        this.Cedula = cedula;
     }
 
     public String getNombre() {
-        return nombre;
+        return Nombre;
     }
 
     public void setNombre(String nombre) {
-        this.nombre = nombre;
+        this.Nombre = nombre;
     }
 
     public String getApellidos() {
-        return apellidos;
+        return Apellido;
     }
 
     public void setApellidos(String apellidos) {
-        this.apellidos = apellidos;
+        this.Apellido = Apellido;
     }
 
     public String getDireccion() {
-        return direccion;
+        return Direccion;
     }
 
     public void setDireccion(String direccion) {
-        this.direccion = direccion;
+        this.Direccion = direccion;
     }
 
     public String getCorreo() {
-        return correo;
+        return Correo;
     }
 
     public void setCorreo(String correo) {
-        this.correo = correo;
+        this.Correo = correo;
     }
 
     public String getTelefono() {
-        return telefono;
+        return Telefono;
     }
 
     public void setTelefono(String telefono) {
-        this.telefono = telefono;
+        this.Telefono = telefono;
     }
 
     @Override
     public String toString() {
-        return "Clientes{" + "cedula=" + cedula + ", nombre=" + nombre + ", apellidos=" + apellidos + ", direccion=" + direccion + ", correo=" + correo + ", telefono=" + telefono + '}';
+        return "Clientes{" + "cedula=" + Cedula + ", nombre=" + Nombre + ", apellidos=" + Apellido + ", direccion=" + Direccion + ", correo=" + Correo + ", telefono=" + Telefono + '}';
     }
 
     
